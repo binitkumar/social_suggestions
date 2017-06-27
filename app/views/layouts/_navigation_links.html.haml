@@ -1,0 +1,5 @@
+%li
+  - if current_user
+    = link_to "Sign Out", user_session_path, method: :delete
+  - else
+    = link_to "Sing In", new_user_session_path
